@@ -1,0 +1,358 @@
+{
+  "run_id": "093122192941831355317543099352820290454",
+  "workload_file": "workloads/skewed-032026962544805738618096962930311207957.json",
+  "workload": {
+    "workload_id": "032026962544805738618096962930311207957",
+    "model": "router-demo",
+    "ordering_seed": 42,
+    "temperature": 0,
+    "max_tokens": 48,
+    "documents": {
+      "warehouse-032026962544805738618096962930311207957": {
+        "name": "warehouse",
+        "affinity_key": "warehouse-v1",
+        "text": "Warehouse record 000: Robot R000 operates in zone 0. Its inspection interval is 10 minutes.\nWarehouse record 001: Robot R001 operates in zone 1. Its inspection interval is 11 minutes.\nWarehouse record 002: Robot R002 operates in zone 2. Its inspection interval is 12 minutes.\nWarehouse record 003: Robot R003 operates in zone 3. Its inspection interval is 13 minutes.\nWarehouse record 004: Robot R004 operates in zone 4. Its inspection interval is 14 minutes.\nWarehouse record 005: Robot R005 operates in zone 5. Its inspection interval is 15 minutes.\nWarehouse record 006: Robot R006 operates in zone 6. Its inspection interval is 16 minutes.\nWarehouse record 007: Robot R007 operates in zone 7. Its inspection interval is 17 minutes.\nWarehouse record 008: Robot R008 operates in zone 8. Its inspection interval is 18 minutes.\nWarehouse record 009: Robot R009 operates in zone 9. Its inspection interval is 19 minutes.\nWarehouse record 010: Robot R010 operates in zone 10. Its inspection interval is 20 minutes.\nWarehouse record 011: Robot R011 operates in zone 11. Its inspection interval is 21 minutes.\nWarehouse record 012: Robot R012 operates in zone 0. Its inspection interval is 22 minutes.\nWarehouse record 013: Robot R013 operates in zone 1. Its inspection interval is 23 minutes.\nWarehouse record 014: Robot R014 operates in zone 2. Its inspection interval is 24 minutes.\nWarehouse record 015: Robot R015 operates in zone 3. Its inspection interval is 25 minutes.\nWarehouse record 016: Robot R016 operates in zone 4. Its inspection interval is 26 minutes.\nWarehouse record 017: Robot R017 operates in zone 5. Its inspection interval is 27 minutes.\nWarehouse record 018: Robot R018 operates in zone 6. Its inspection interval is 28 minutes.\nWarehouse record 019: Robot R019 operates in zone 7. Its inspection interval is 29 minutes.\nWarehouse record 020: Robot R020 operates in zone 8. Its inspection interval is 10 minutes.\nWarehouse record 021: Robot R021 operates in zone 9. Its inspection interval is 11 minutes.\nWarehouse record 022: Robot R022 operates in zone 10. Its inspection interval is 12 minutes.\nWarehouse record 023: Robot R023 operates in zone 11. Its inspection interval is 13 minutes.\nWarehouse record 024: Robot R024 operates in zone 0. Its inspection interval is 14 minutes.\nWarehouse record 025: Robot R025 operates in zone 1. Its inspection interval is 15 minutes.\nWarehouse record 026: Robot R026 operates in zone 2. Its inspection interval is 16 minutes.\nWarehouse record 027: Robot R027 operates in zone 3. Its inspection interval is 17 minutes.\nWarehouse record 028: Robot R028 operates in zone 4. Its inspection interval is 18 minutes.\nWarehouse record 029: Robot R029 operates in zone 5. Its inspection interval is 19 minutes.\nWarehouse record 030: Robot R030 operates in zone 6. Its inspection interval is 20 minutes.\nWarehouse record 031: Robot R031 operates in zone 7. Its inspection interval is 21 minutes.\nWarehouse record 032: Robot R032 operates in zone 8. Its inspection interval is 22 minutes.\nWarehouse record 033: Robot R033 operates in zone 9. Its inspection interval is 23 minutes.\nWarehouse record 034: Robot R034 operates in zone 10. Its inspection interval is 24 minutes.\nWarehouse record 035: Robot R035 operates in zone 11. Its inspection interval is 25 minutes.\nWarehouse record 036: Robot R036 operates in zone 0. Its inspection interval is 26 minutes.\nWarehouse record 037: Robot R037 operates in zone 1. Its inspection interval is 27 minutes.\nWarehouse record 038: Robot R038 operates in zone 2. Its inspection interval is 28 minutes.\nWarehouse record 039: Robot R039 operates in zone 3. Its inspection interval is 29 minutes.\nWarehouse record 040: Robot R040 operates in zone 4. Its inspection interval is 10 minutes.\nWarehouse record 041: Robot R041 operates in zone 5. Its inspection interval is 11 minutes.\nWarehouse record 042: Robot R042 operates in zone 6. Its inspection interval is 12 minutes.\nWarehouse record 043: Robot R043 operates in zone 7. Its inspection interval is 13 minutes.\nWarehouse record 044: Robot R044 operates in zone 8. Its inspection interval is 14 minutes.\nWarehouse record 045: Robot R045 operates in zone 9. Its inspection interval is 15 minutes.\nWarehouse record 046: Robot R046 operates in zone 10. Its inspection interval is 16 minutes.\nWarehouse record 047: Robot R047 operates in zone 11. Its inspection interval is 17 minutes.\nWarehouse record 048: Robot R048 operates in zone 0. Its inspection interval is 18 minutes.\nWarehouse record 049: Robot R049 operates in zone 1. Its inspection interval is 19 minutes.\nWarehouse record 050: Robot R050 operates in zone 2. Its inspection interval is 20 minutes.\nWarehouse record 051: Robot R051 operates in zone 3. Its inspection interval is 21 minutes.\nWarehouse record 052: Robot R052 operates in zone 4. Its inspection interval is 22 minutes.\nWarehouse record 053: Robot R053 operates in zone 5. Its inspection interval is 23 minutes.\nWarehouse record 054: Robot R054 operates in zone 6. Its inspection interval is 24 minutes.\nWarehouse record 055: Robot R055 operates in zone 7. Its inspection interval is 25 minutes.\nWarehouse record 056: Robot R056 operates in zone 8. Its inspection interval is 26 minutes.\nWarehouse record 057: Robot R057 operates in zone 9. Its inspection interval is 27 minutes.\nWarehouse record 058: Robot R058 operates in zone 10. Its inspection interval is 28 minutes.\nWarehouse record 059: Robot R059 operates in zone 11. Its inspection interval is 29 minutes.\nWarehouse record 060: Robot R060 operates in zone 0. Its inspection interval is 10 minutes.\nWarehouse record 061: Robot R061 operates in zone 1. Its inspection interval is 11 minutes.\nWarehouse record 062: Robot R062 operates in zone 2. Its inspection interval is 12 minutes.\nWarehouse record 063: Robot R063 operates in zone 3. Its inspection interval is 13 minutes.\nWarehouse record 064: Robot R064 operates in zone 4. Its inspection interval is 14 minutes.\nWarehouse record 065: Robot R065 operates in zone 5. Its inspection interval is 15 minutes.\nWarehouse record 066: Robot R066 operates in zone 6. Its inspection interval is 16 minutes.\nWarehouse record 067: Robot R067 operates in zone 7. Its inspection interval is 17 minutes.\nWarehouse record 068: Robot R068 operates in zone 8. Its inspection interval is 18 minutes.\nWarehouse record 069: Robot R069 operates in zone 9. Its inspection interval is 19 minutes.\nWarehouse record 070: Robot R070 operates in zone 10. Its inspection interval is 20 minutes.\nWarehouse record 071: Robot R071 operates in zone 11. Its inspection interval is 21 minutes.\nWarehouse record 072: Robot R072 operates in zone 0. Its inspection interval is 22 minutes.\nWarehouse record 073: Robot R073 operates in zone 1. Its inspection interval is 23 minutes.\nWarehouse record 074: Robot R074 operates in zone 2. Its inspection interval is 24 minutes.\nWarehouse record 075: Robot R075 operates in zone 3. Its inspection interval is 25 minutes.\nWarehouse record 076: Robot R076 operates in zone 4. Its inspection interval is 26 minutes.\nWarehouse record 077: Robot R077 operates in zone 5. Its inspection interval is 27 minutes.\nWarehouse record 078: Robot R078 operates in zone 6. Its inspection interval is 28 minutes.\nWarehouse record 079: Robot R079 operates in zone 7. Its inspection interval is 29 minutes.",
+        "predicted_affinity_replica": "B"
+      },
+      "hospital-032026962544805738618096962930311207957": {
+        "name": "hospital",
+        "affinity_key": "hospital-v1",
+        "text": "Hospital record 000: Robot R000 operates in zone 1. Its inspection interval is 10 minutes.\nHospital record 001: Robot R001 operates in zone 2. Its inspection interval is 11 minutes.\nHospital record 002: Robot R002 operates in zone 3. Its inspection interval is 12 minutes.\nHospital record 003: Robot R003 operates in zone 4. Its inspection interval is 13 minutes.\nHospital record 004: Robot R004 operates in zone 5. Its inspection interval is 14 minutes.\nHospital record 005: Robot R005 operates in zone 6. Its inspection interval is 15 minutes.\nHospital record 006: Robot R006 operates in zone 7. Its inspection interval is 16 minutes.\nHospital record 007: Robot R007 operates in zone 8. Its inspection interval is 17 minutes.\nHospital record 008: Robot R008 operates in zone 9. Its inspection interval is 18 minutes.\nHospital record 009: Robot R009 operates in zone 10. Its inspection interval is 19 minutes.\nHospital record 010: Robot R010 operates in zone 11. Its inspection interval is 20 minutes.\nHospital record 011: Robot R011 operates in zone 0. Its inspection interval is 21 minutes.\nHospital record 012: Robot R012 operates in zone 1. Its inspection interval is 22 minutes.\nHospital record 013: Robot R013 operates in zone 2. Its inspection interval is 23 minutes.\nHospital record 014: Robot R014 operates in zone 3. Its inspection interval is 24 minutes.\nHospital record 015: Robot R015 operates in zone 4. Its inspection interval is 25 minutes.\nHospital record 016: Robot R016 operates in zone 5. Its inspection interval is 26 minutes.\nHospital record 017: Robot R017 operates in zone 6. Its inspection interval is 27 minutes.\nHospital record 018: Robot R018 operates in zone 7. Its inspection interval is 28 minutes.\nHospital record 019: Robot R019 operates in zone 8. Its inspection interval is 29 minutes.\nHospital record 020: Robot R020 operates in zone 9. Its inspection interval is 10 minutes.\nHospital record 021: Robot R021 operates in zone 10. Its inspection interval is 11 minutes.\nHospital record 022: Robot R022 operates in zone 11. Its inspection interval is 12 minutes.\nHospital record 023: Robot R023 operates in zone 0. Its inspection interval is 13 minutes.\nHospital record 024: Robot R024 operates in zone 1. Its inspection interval is 14 minutes.\nHospital record 025: Robot R025 operates in zone 2. Its inspection interval is 15 minutes.\nHospital record 026: Robot R026 operates in zone 3. Its inspection interval is 16 minutes.\nHospital record 027: Robot R027 operates in zone 4. Its inspection interval is 17 minutes.\nHospital record 028: Robot R028 operates in zone 5. Its inspection interval is 18 minutes.\nHospital record 029: Robot R029 operates in zone 6. Its inspection interval is 19 minutes.\nHospital record 030: Robot R030 operates in zone 7. Its inspection interval is 20 minutes.\nHospital record 031: Robot R031 operates in zone 8. Its inspection interval is 21 minutes.\nHospital record 032: Robot R032 operates in zone 9. Its inspection interval is 22 minutes.\nHospital record 033: Robot R033 operates in zone 10. Its inspection interval is 23 minutes.\nHospital record 034: Robot R034 operates in zone 11. Its inspection interval is 24 minutes.\nHospital record 035: Robot R035 operates in zone 0. Its inspection interval is 25 minutes.\nHospital record 036: Robot R036 operates in zone 1. Its inspection interval is 26 minutes.\nHospital record 037: Robot R037 operates in zone 2. Its inspection interval is 27 minutes.\nHospital record 038: Robot R038 operates in zone 3. Its inspection interval is 28 minutes.\nHospital record 039: Robot R039 operates in zone 4. Its inspection interval is 29 minutes.\nHospital record 040: Robot R040 operates in zone 5. Its inspection interval is 10 minutes.\nHospital record 041: Robot R041 operates in zone 6. Its inspection interval is 11 minutes.\nHospital record 042: Robot R042 operates in zone 7. Its inspection interval is 12 minutes.\nHospital record 043: Robot R043 operates in zone 8. Its inspection interval is 13 minutes.\nHospital record 044: Robot R044 operates in zone 9. Its inspection interval is 14 minutes.\nHospital record 045: Robot R045 operates in zone 10. Its inspection interval is 15 minutes.\nHospital record 046: Robot R046 operates in zone 11. Its inspection interval is 16 minutes.\nHospital record 047: Robot R047 operates in zone 0. Its inspection interval is 17 minutes.\nHospital record 048: Robot R048 operates in zone 1. Its inspection interval is 18 minutes.\nHospital record 049: Robot R049 operates in zone 2. Its inspection interval is 19 minutes.\nHospital record 050: Robot R050 operates in zone 3. Its inspection interval is 20 minutes.\nHospital record 051: Robot R051 operates in zone 4. Its inspection interval is 21 minutes.\nHospital record 052: Robot R052 operates in zone 5. Its inspection interval is 22 minutes.\nHospital record 053: Robot R053 operates in zone 6. Its inspection interval is 23 minutes.\nHospital record 054: Robot R054 operates in zone 7. Its inspection interval is 24 minutes.\nHospital record 055: Robot R055 operates in zone 8. Its inspection interval is 25 minutes.\nHospital record 056: Robot R056 operates in zone 9. Its inspection interval is 26 minutes.\nHospital record 057: Robot R057 operates in zone 10. Its inspection interval is 27 minutes.\nHospital record 058: Robot R058 operates in zone 11. Its inspection interval is 28 minutes.\nHospital record 059: Robot R059 operates in zone 0. Its inspection interval is 29 minutes.\nHospital record 060: Robot R060 operates in zone 1. Its inspection interval is 10 minutes.\nHospital record 061: Robot R061 operates in zone 2. Its inspection interval is 11 minutes.\nHospital record 062: Robot R062 operates in zone 3. Its inspection interval is 12 minutes.\nHospital record 063: Robot R063 operates in zone 4. Its inspection interval is 13 minutes.\nHospital record 064: Robot R064 operates in zone 5. Its inspection interval is 14 minutes.\nHospital record 065: Robot R065 operates in zone 6. Its inspection interval is 15 minutes.\nHospital record 066: Robot R066 operates in zone 7. Its inspection interval is 16 minutes.\nHospital record 067: Robot R067 operates in zone 8. Its inspection interval is 17 minutes.\nHospital record 068: Robot R068 operates in zone 9. Its inspection interval is 18 minutes.\nHospital record 069: Robot R069 operates in zone 10. Its inspection interval is 19 minutes.\nHospital record 070: Robot R070 operates in zone 11. Its inspection interval is 20 minutes.\nHospital record 071: Robot R071 operates in zone 0. Its inspection interval is 21 minutes.\nHospital record 072: Robot R072 operates in zone 1. Its inspection interval is 22 minutes.\nHospital record 073: Robot R073 operates in zone 2. Its inspection interval is 23 minutes.\nHospital record 074: Robot R074 operates in zone 3. Its inspection interval is 24 minutes.\nHospital record 075: Robot R075 operates in zone 4. Its inspection interval is 25 minutes.\nHospital record 076: Robot R076 operates in zone 5. Its inspection interval is 26 minutes.\nHospital record 077: Robot R077 operates in zone 6. Its inspection interval is 27 minutes.\nHospital record 078: Robot R078 operates in zone 7. Its inspection interval is 28 minutes.\nHospital record 079: Robot R079 operates in zone 8. Its inspection interval is 29 minutes.",
+        "predicted_affinity_replica": "A"
+      },
+      "manual-032026962544805738618096962930311207957": {
+        "name": "manual",
+        "affinity_key": "manual-v1",
+        "text": "Manual record 000: Robot R000 operates in zone 2. Its inspection interval is 10 minutes.\nManual record 001: Robot R001 operates in zone 3. Its inspection interval is 11 minutes.\nManual record 002: Robot R002 operates in zone 4. Its inspection interval is 12 minutes.\nManual record 003: Robot R003 operates in zone 5. Its inspection interval is 13 minutes.\nManual record 004: Robot R004 operates in zone 6. Its inspection interval is 14 minutes.\nManual record 005: Robot R005 operates in zone 7. Its inspection interval is 15 minutes.\nManual record 006: Robot R006 operates in zone 8. Its inspection interval is 16 minutes.\nManual record 007: Robot R007 operates in zone 9. Its inspection interval is 17 minutes.\nManual record 008: Robot R008 operates in zone 10. Its inspection interval is 18 minutes.\nManual record 009: Robot R009 operates in zone 11. Its inspection interval is 19 minutes.\nManual record 010: Robot R010 operates in zone 0. Its inspection interval is 20 minutes.\nManual record 011: Robot R011 operates in zone 1. Its inspection interval is 21 minutes.\nManual record 012: Robot R012 operates in zone 2. Its inspection interval is 22 minutes.\nManual record 013: Robot R013 operates in zone 3. Its inspection interval is 23 minutes.\nManual record 014: Robot R014 operates in zone 4. Its inspection interval is 24 minutes.\nManual record 015: Robot R015 operates in zone 5. Its inspection interval is 25 minutes.\nManual record 016: Robot R016 operates in zone 6. Its inspection interval is 26 minutes.\nManual record 017: Robot R017 operates in zone 7. Its inspection interval is 27 minutes.\nManual record 018: Robot R018 operates in zone 8. Its inspection interval is 28 minutes.\nManual record 019: Robot R019 operates in zone 9. Its inspection interval is 29 minutes.\nManual record 020: Robot R020 operates in zone 10. Its inspection interval is 10 minutes.\nManual record 021: Robot R021 operates in zone 11. Its inspection interval is 11 minutes.\nManual record 022: Robot R022 operates in zone 0. Its inspection interval is 12 minutes.\nManual record 023: Robot R023 operates in zone 1. Its inspection interval is 13 minutes.\nManual record 024: Robot R024 operates in zone 2. Its inspection interval is 14 minutes.\nManual record 025: Robot R025 operates in zone 3. Its inspection interval is 15 minutes.\nManual record 026: Robot R026 operates in zone 4. Its inspection interval is 16 minutes.\nManual record 027: Robot R027 operates in zone 5. Its inspection interval is 17 minutes.\nManual record 028: Robot R028 operates in zone 6. Its inspection interval is 18 minutes.\nManual record 029: Robot R029 operates in zone 7. Its inspection interval is 19 minutes.\nManual record 030: Robot R030 operates in zone 8. Its inspection interval is 20 minutes.\nManual record 031: Robot R031 operates in zone 9. Its inspection interval is 21 minutes.\nManual record 032: Robot R032 operates in zone 10. Its inspection interval is 22 minutes.\nManual record 033: Robot R033 operates in zone 11. Its inspection interval is 23 minutes.\nManual record 034: Robot R034 operates in zone 0. Its inspection interval is 24 minutes.\nManual record 035: Robot R035 operates in zone 1. Its inspection interval is 25 minutes.\nManual record 036: Robot R036 operates in zone 2. Its inspection interval is 26 minutes.\nManual record 037: Robot R037 operates in zone 3. Its inspection interval is 27 minutes.\nManual record 038: Robot R038 operates in zone 4. Its inspection interval is 28 minutes.\nManual record 039: Robot R039 operates in zone 5. Its inspection interval is 29 minutes.\nManual record 040: Robot R040 operates in zone 6. Its inspection interval is 10 minutes.\nManual record 041: Robot R041 operates in zone 7. Its inspection interval is 11 minutes.\nManual record 042: Robot R042 operates in zone 8. Its inspection interval is 12 minutes.\nManual record 043: Robot R043 operates in zone 9. Its inspection interval is 13 minutes.\nManual record 044: Robot R044 operates in zone 10. Its inspection interval is 14 minutes.\nManual record 045: Robot R045 operates in zone 11. Its inspection interval is 15 minutes.\nManual record 046: Robot R046 operates in zone 0. Its inspection interval is 16 minutes.\nManual record 047: Robot R047 operates in zone 1. Its inspection interval is 17 minutes.\nManual record 048: Robot R048 operates in zone 2. Its inspection interval is 18 minutes.\nManual record 049: Robot R049 operates in zone 3. Its inspection interval is 19 minutes.\nManual record 050: Robot R050 operates in zone 4. Its inspection interval is 20 minutes.\nManual record 051: Robot R051 operates in zone 5. Its inspection interval is 21 minutes.\nManual record 052: Robot R052 operates in zone 6. Its inspection interval is 22 minutes.\nManual record 053: Robot R053 operates in zone 7. Its inspection interval is 23 minutes.\nManual record 054: Robot R054 operates in zone 8. Its inspection interval is 24 minutes.\nManual record 055: Robot R055 operates in zone 9. Its inspection interval is 25 minutes.\nManual record 056: Robot R056 operates in zone 10. Its inspection interval is 26 minutes.\nManual record 057: Robot R057 operates in zone 11. Its inspection interval is 27 minutes.\nManual record 058: Robot R058 operates in zone 0. Its inspection interval is 28 minutes.\nManual record 059: Robot R059 operates in zone 1. Its inspection interval is 29 minutes.\nManual record 060: Robot R060 operates in zone 2. Its inspection interval is 10 minutes.\nManual record 061: Robot R061 operates in zone 3. Its inspection interval is 11 minutes.\nManual record 062: Robot R062 operates in zone 4. Its inspection interval is 12 minutes.\nManual record 063: Robot R063 operates in zone 5. Its inspection interval is 13 minutes.\nManual record 064: Robot R064 operates in zone 6. Its inspection interval is 14 minutes.\nManual record 065: Robot R065 operates in zone 7. Its inspection interval is 15 minutes.\nManual record 066: Robot R066 operates in zone 8. Its inspection interval is 16 minutes.\nManual record 067: Robot R067 operates in zone 9. Its inspection interval is 17 minutes.\nManual record 068: Robot R068 operates in zone 10. Its inspection interval is 18 minutes.\nManual record 069: Robot R069 operates in zone 11. Its inspection interval is 19 minutes.\nManual record 070: Robot R070 operates in zone 0. Its inspection interval is 20 minutes.\nManual record 071: Robot R071 operates in zone 1. Its inspection interval is 21 minutes.\nManual record 072: Robot R072 operates in zone 2. Its inspection interval is 22 minutes.\nManual record 073: Robot R073 operates in zone 3. Its inspection interval is 23 minutes.\nManual record 074: Robot R074 operates in zone 4. Its inspection interval is 24 minutes.\nManual record 075: Robot R075 operates in zone 5. Its inspection interval is 25 minutes.\nManual record 076: Robot R076 operates in zone 6. Its inspection interval is 26 minutes.\nManual record 077: Robot R077 operates in zone 7. Its inspection interval is 27 minutes.\nManual record 078: Robot R078 operates in zone 8. Its inspection interval is 28 minutes.\nManual record 079: Robot R079 operates in zone 9. Its inspection interval is 29 minutes.",
+        "predicted_affinity_replica": "B"
+      }
+    },
+    "requests": [
+      {
+        "request_id": "warehouse-8",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R014 operate in?",
+        "expected_zone": 2
+      },
+      {
+        "request_id": "warehouse-6",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R012 operate in?",
+        "expected_zone": 0
+      },
+      {
+        "request_id": "warehouse-3",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R009 operate in?",
+        "expected_zone": 9
+      },
+      {
+        "request_id": "hospital-1",
+        "document_id": "hospital-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R007 operate in?",
+        "expected_zone": 8
+      },
+      {
+        "request_id": "hospital-2",
+        "document_id": "hospital-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R008 operate in?",
+        "expected_zone": 9
+      },
+      {
+        "request_id": "warehouse-7",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R013 operate in?",
+        "expected_zone": 1
+      },
+      {
+        "request_id": "manual-2",
+        "document_id": "manual-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R008 operate in?",
+        "expected_zone": 10
+      },
+      {
+        "request_id": "warehouse-4",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R010 operate in?",
+        "expected_zone": 10
+      },
+      {
+        "request_id": "warehouse-5",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R011 operate in?",
+        "expected_zone": 11
+      },
+      {
+        "request_id": "warehouse-1",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R007 operate in?",
+        "expected_zone": 7
+      },
+      {
+        "request_id": "warehouse-2",
+        "document_id": "warehouse-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R008 operate in?",
+        "expected_zone": 8
+      },
+      {
+        "request_id": "manual-1",
+        "document_id": "manual-032026962544805738618096962930311207957",
+        "question": "Which zone does robot R007 operate in?",
+        "expected_zone": 9
+      }
+    ]
+  },
+  "concurrency": 4,
+  "cache_preparation": "fresh execution prefix; no explicit warm-up",
+  "router_config": {
+    "policy": "affinity_load",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  "requests": [
+    {
+      "request_id": "warehouse-8",
+      "document": "warehouse",
+      "client_wait_seconds": 5.590030923485756e-06,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.1133825249853544,
+      "completion_seconds": 0.16410454496508464,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 2.",
+      "expected_zone": 2
+    },
+    {
+      "request_id": "warehouse-6",
+      "document": "warehouse",
+      "client_wait_seconds": 2.2799940779805183e-06,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.11305706901475787,
+      "completion_seconds": 0.1648085960187018,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 2.",
+      "expected_zone": 0
+    },
+    {
+      "request_id": "warehouse-3",
+      "document": "warehouse",
+      "client_wait_seconds": 1.409964170306921e-06,
+      "replica": "A",
+      "reason": "load_override",
+      "first_content_seconds": 0.1781378950108774,
+      "completion_seconds": 0.22271379898302257,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 9.",
+      "expected_zone": 9
+    },
+    {
+      "request_id": "hospital-1",
+      "document": "hospital",
+      "client_wait_seconds": 1.160020474344492e-06,
+      "replica": "A",
+      "reason": "affinity",
+      "first_content_seconds": 0.18649806798202917,
+      "completion_seconds": 0.3202063109492883,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2267,
+        "completion_tokens": 12
+      },
+      "answer": "Robot R007 operates in zone 8.",
+      "expected_zone": 8
+    },
+    {
+      "request_id": "hospital-2",
+      "document": "hospital",
+      "client_wait_seconds": 0.1638264589710161,
+      "replica": "B",
+      "reason": "load_override",
+      "first_content_seconds": 0.11175935697974637,
+      "completion_seconds": 0.30393488198751584,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2267,
+        "completion_tokens": 12
+      },
+      "answer": "Robot R008 operates in zone 9.",
+      "expected_zone": 9
+    },
+    {
+      "request_id": "warehouse-7",
+      "document": "warehouse",
+      "client_wait_seconds": 0.16472424496896565,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.11119324702303857,
+      "completion_seconds": 0.21177160099614412,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 1.",
+      "expected_zone": 1
+    },
+    {
+      "request_id": "manual-2",
+      "document": "manual",
+      "client_wait_seconds": 0.22297297400655225,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.1287352970102802,
+      "completion_seconds": 0.2867489670170471,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2268,
+        "completion_tokens": 13
+      },
+      "answer": "Robot R008 operates in zone 10.",
+      "expected_zone": 10
+    },
+    {
+      "request_id": "warehouse-4",
+      "document": "warehouse",
+      "client_wait_seconds": 0.3206228180206381,
+      "replica": "A",
+      "reason": "load_override",
+      "first_content_seconds": 0.03816485498100519,
+      "completion_seconds": 0.1801576999714598,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2268,
+        "completion_tokens": 13
+      },
+      "answer": "Robot R010 operates in zone 10.",
+      "expected_zone": 10
+    },
+    {
+      "request_id": "warehouse-5",
+      "document": "warehouse",
+      "client_wait_seconds": 0.37699670501751825,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.05234691803343594,
+      "completion_seconds": 0.10412042500684038,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 1.",
+      "expected_zone": 11
+    },
+    {
+      "request_id": "warehouse-1",
+      "document": "warehouse",
+      "client_wait_seconds": 0.46803048596484587,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.042241604009177536,
+      "completion_seconds": 0.0836872750078328,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 7.",
+      "expected_zone": 7
+    },
+    {
+      "request_id": "warehouse-2",
+      "document": "warehouse",
+      "client_wait_seconds": 0.4813025839976035,
+      "replica": "B",
+      "reason": "affinity",
+      "first_content_seconds": 0.03653484600363299,
+      "completion_seconds": 0.08063787303399295,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2260,
+        "completion_tokens": 5
+      },
+      "answer": "Zone 8.",
+      "expected_zone": 8
+    },
+    {
+      "request_id": "manual-1",
+      "document": "manual",
+      "client_wait_seconds": 0.5009647410479374,
+      "replica": "A",
+      "reason": "load_override",
+      "first_content_seconds": 0.0919119159807451,
+      "completion_seconds": 0.14989767997758463,
+      "usage": {
+        "prompt_tokens": 2255,
+        "total_tokens": 2267,
+        "completion_tokens": 12
+      },
+      "answer": "Robot R007 operates in zone 9.",
+      "expected_zone": 9
+    }
+  ],
+  "before": {
+    "A": {
+      "queries": 70446.0,
+      "hits": 31936.0
+    },
+    "B": {
+      "queries": 201082.0,
+      "hits": 148448.0
+    }
+  },
+  "after": {
+    "A": {
+      "queries": 79466.0,
+      "hits": 34240.0
+    },
+    "B": {
+      "queries": 219122.0,
+      "hits": 159712.0
+    }
+  },
+  "counter_deltas": {
+    "A": {
+      "queries": 9020.0,
+      "hits": 2304.0
+    },
+    "B": {
+      "queries": 18040.0,
+      "hits": 11264.0
+    }
+  },
+  "final_router_stats": {
+    "policy": "affinity_load",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  "summary": {
+    "successful": 12,
+    "failed": 0,
+    "batch_seconds": 0.6522602759650908,
+    "mean_first_content_ms": 100.3302997511734,
+    "token_hit_rate": 0.5014042867701405,
+    "assignments": {
+      "B": 8,
+      "A": 4
+    }
+  }
+}
