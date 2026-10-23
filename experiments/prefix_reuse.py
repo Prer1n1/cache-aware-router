@@ -1,6 +1,7 @@
 """Measure prefix reuse for four sequential related requests."""
 
 import json
+import time
 import uuid
 from pathlib import Path
 
@@ -82,6 +83,7 @@ def main():
         for number, question in enumerate(questions, start=1):
             before = snapshot(client)
 
+            started = time.perf_counter()
             response = client.post(
                 ROUTER + "/v1/chat/completions",
                 json={
@@ -110,6 +112,7 @@ def main():
                     "stream": False,
                 },
             )
+            elapsed = time.perf_counter() - started
             response.raise_for_status()
 
             body = response.json()
@@ -141,6 +144,7 @@ def main():
 
             row = {
                 "request": number,
+                "end_to_end_seconds": elapsed,
                 "question": question,
                 "replica": replica,
                 "reason": response.headers["x-routing-reason"],
@@ -156,7 +160,9 @@ def main():
                 f"Request {number} -> {replica} | "
                 f"Reason: {row['reason']} | "
                 f"Queried: {int(row['delta']['queries'])} | "
-                f"Cached: {int(row['delta']['hits'])}"
+                f"Cached: {int(row['delta']['hits'])} | "
+                f"Latency: {elapsed * 1000:.1f} ms | "
+                f"Output tokens: {body['usage']['completion_tokens']}"
             )
 
     queried = sum(row["delta"]["queries"] for row in rows)
