@@ -1,0 +1,165 @@
+{
+  "run_id": "151091654735312419443026973918974774275",
+  "router_config": {
+    "policy": "round_robin",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  "requests": [
+    {
+      "request": 1,
+      "question": "Which aisle does robot R007 operate in?",
+      "replica": "A",
+      "reason": "round_robin",
+      "first_content_seconds": 0.06437129399273545,
+      "completion_marker_seconds": 0.12284130800981075,
+      "usage": {
+        "prompt_tokens": 2332,
+        "total_tokens": 2344,
+        "completion_tokens": 12
+      },
+      "answer": "Robot R007 operates in aisle 7.",
+      "before": {
+        "A": {
+          "queries": 102787.0,
+          "hits": 60304.0
+        },
+        "B": {
+          "queries": 93754.0,
+          "hits": 55840.0
+        }
+      },
+      "after": {
+        "A": {
+          "queries": 105119.0,
+          "hits": 60304.0
+        },
+        "B": {
+          "queries": 93754.0,
+          "hits": 55840.0
+        }
+      },
+      "delta": {
+        "queries": 2332.0,
+        "hits": 0.0
+      }
+    },
+    {
+      "request": 2,
+      "question": "What is the inspection interval for robot R007?",
+      "replica": "B",
+      "reason": "round_robin",
+      "first_content_seconds": 0.06584752001799643,
+      "completion_marker_seconds": 0.1450960299698636,
+      "usage": {
+        "prompt_tokens": 2333,
+        "total_tokens": 2349,
+        "completion_tokens": 16
+      },
+      "answer": "The inspection interval for robot R007 is 17 minutes.",
+      "before": {
+        "A": {
+          "queries": 105119.0,
+          "hits": 60304.0
+        },
+        "B": {
+          "queries": 93754.0,
+          "hits": 55840.0
+        }
+      },
+      "after": {
+        "A": {
+          "queries": 105119.0,
+          "hits": 60304.0
+        },
+        "B": {
+          "queries": 96087.0,
+          "hits": 55840.0
+        }
+      },
+      "delta": {
+        "queries": 2333.0,
+        "hits": 0.0
+      }
+    },
+    {
+      "request": 3,
+      "question": "Which aisle does robot R008 operate in?",
+      "replica": "A",
+      "reason": "round_robin",
+      "first_content_seconds": 0.03081565903266892,
+      "completion_marker_seconds": 0.08773000503424555,
+      "usage": {
+        "prompt_tokens": 2332,
+        "total_tokens": 2344,
+        "completion_tokens": 12
+      },
+      "answer": "Robot R008 operates in aisle 8.",
+      "before": {
+        "A": {
+          "queries": 105119.0,
+          "hits": 60304.0
+        },
+        "B": {
+          "queries": 96087.0,
+          "hits": 55840.0
+        }
+      },
+      "after": {
+        "A": {
+          "queries": 107451.0,
+          "hits": 62624.0
+        },
+        "B": {
+          "queries": 96087.0,
+          "hits": 55840.0
+        }
+      },
+      "delta": {
+        "queries": 2332.0,
+        "hits": 2320.0
+      }
+    },
+    {
+      "request": 4,
+      "question": "What is the inspection interval for robot R008?",
+      "replica": "B",
+      "reason": "round_robin",
+      "first_content_seconds": 0.03541264700470492,
+      "completion_marker_seconds": 0.11230310599785298,
+      "usage": {
+        "prompt_tokens": 2333,
+        "total_tokens": 2349,
+        "completion_tokens": 16
+      },
+      "answer": "The inspection interval for robot R008 is 18 minutes.",
+      "before": {
+        "A": {
+          "queries": 107451.0,
+          "hits": 62624.0
+        },
+        "B": {
+          "queries": 96087.0,
+          "hits": 55840.0
+        }
+      },
+      "after": {
+        "A": {
+          "queries": 107451.0,
+          "hits": 62624.0
+        },
+        "B": {
+          "queries": 98420.0,
+          "hits": 58160.0
+        }
+      },
+      "delta": {
+        "queries": 2333.0,
+        "hits": 2320.0
+      }
+    }
+  ]
+}
