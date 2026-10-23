@@ -199,14 +199,38 @@ async def main():
 
             return row
 
-        burst_started = time.perf_counter()
+        profile_burst = os.environ.get("PROFILE_BURST", "0") == "1"
+        profiling_started = []
 
-        rows = await asyncio.gather(*[
-            send(number, question)
-            for number, question in enumerate(questions, start=1)
-        ])
+        try:
+            if profile_burst:
+                for name, address in REPLICAS.items():
+                    response = await client.post(
+                        address + "/start_profile",
+                        timeout=300.0,
+                    )
+                    response.raise_for_status()
+                    profiling_started.append((name, address))
+                    print("Started profiling:", name, flush=True)
 
-        burst_seconds = time.perf_counter() - burst_started
+            burst_started = time.perf_counter()
+
+            rows = await asyncio.gather(*[
+                send(number, question)
+                for number, question in enumerate(questions, start=1)
+            ])
+
+            burst_seconds = time.perf_counter() - burst_started
+
+        finally:
+            for name, address in reversed(profiling_started):
+                print("Stopping/flushing profiler:", name, flush=True)
+                response = await client.post(
+                    address + "/stop_profile",
+                    timeout=300.0,
+                )
+                response.raise_for_status()
+                print("Profiler stopped:", name, flush=True)
 
         # Allow router cleanup to finish before the final snapshot.
         deadline = time.perf_counter() + 5.0
@@ -269,6 +293,7 @@ async def main():
         "run_id": run_id,
         "router_config": config,
         "warm_both": warm_both,
+        "profiled": profile_burst,
         "requests": rows,
         "before": before,
         "after": after,
