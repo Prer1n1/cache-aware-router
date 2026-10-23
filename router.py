@@ -7,6 +7,7 @@ import httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import Response
 from pydantic import BaseModel, ConfigDict, Field
+from stream_proxy import forward_stream
 
 
 REPLICAS = [
@@ -81,12 +82,6 @@ async def stats():
 
 @app.post("/v1/chat/completions")
 async def chat(request: ChatRequest):
-    if request.stream:
-        raise HTTPException(
-            status_code=400,
-            detail="This version supports stream=false only.",
-        )
-
     payload = request.model_dump(exclude={"affinity_key"})
 
     # Select and reserve a destination in one atomic critical section.
@@ -121,6 +116,16 @@ async def chat(request: ChatRequest):
 
         name, base_url = REPLICAS[index]
         app.state.in_flight[name] += 1
+
+    if request.stream:
+        return await forward_stream(
+            app, name, base_url, payload,
+            headers={
+                "X-Replica": name,
+                "X-Routing-Policy": POLICY,
+                "X-Routing-Reason": reason,
+            },
+        )
 
     try:
         upstream = await app.state.client.post(
