@@ -1,0 +1,80 @@
+{
+  "run_id": "b7f57a8ff6304ab68c64bff7636e98f8",
+  "initial": {
+    "policy": "affinity_load",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  "requests": [
+    {
+      "request": 1,
+      "replica": "B",
+      "reason": "affinity",
+      "usage": {
+        "prompt_tokens": 45,
+        "total_tokens": 301,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      }
+    },
+    {
+      "request": 2,
+      "replica": "B",
+      "reason": "affinity",
+      "usage": {
+        "prompt_tokens": 45,
+        "total_tokens": 301,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      }
+    },
+    {
+      "request": 3,
+      "replica": "A",
+      "reason": "load_override",
+      "usage": {
+        "prompt_tokens": 45,
+        "total_tokens": 301,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      }
+    },
+    {
+      "request": 4,
+      "replica": "B",
+      "reason": "affinity",
+      "usage": {
+        "prompt_tokens": 45,
+        "total_tokens": 301,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      }
+    }
+  ],
+  "observed_in_flight": [
+    {
+      "A": 0,
+      "B": 0
+    },
+    {
+      "A": 1,
+      "B": 3
+    }
+  ],
+  "errors": [],
+  "final": {
+    "policy": "affinity_load",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  }
+}
