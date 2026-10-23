@@ -1,0 +1,110 @@
+{
+  "run_id": "321871066988721554552616738060635110238",
+  "router_config": {
+    "policy": "affinity",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  "warm_both": true,
+  "requests": [
+    {
+      "request": 1,
+      "question": "Which aisle does robot R007 operate in?",
+      "replica": "A",
+      "reason": "affinity",
+      "first_content_seconds": 0.060563657025340945,
+      "completion_marker_seconds": 0.1246322340448387,
+      "usage": {
+        "prompt_tokens": 2332,
+        "total_tokens": 2344,
+        "completion_tokens": 12
+      }
+    },
+    {
+      "request": 2,
+      "question": "What is the inspection interval for robot R007?",
+      "replica": "A",
+      "reason": "affinity",
+      "first_content_seconds": 0.07322156295413151,
+      "completion_marker_seconds": 0.15272415394429117,
+      "usage": {
+        "prompt_tokens": 2333,
+        "total_tokens": 2349,
+        "completion_tokens": 16
+      }
+    },
+    {
+      "request": 3,
+      "question": "Which aisle does robot R008 operate in?",
+      "replica": "A",
+      "reason": "affinity",
+      "first_content_seconds": 0.07505528500769287,
+      "completion_marker_seconds": 0.13616569101577625,
+      "usage": {
+        "prompt_tokens": 2332,
+        "total_tokens": 2344,
+        "completion_tokens": 12
+      }
+    },
+    {
+      "request": 4,
+      "question": "What is the inspection interval for robot R008?",
+      "replica": "A",
+      "reason": "affinity",
+      "first_content_seconds": 0.07311017200117931,
+      "completion_marker_seconds": 0.15337973600253463,
+      "usage": {
+        "prompt_tokens": 2333,
+        "total_tokens": 2349,
+        "completion_tokens": 16
+      }
+    }
+  ],
+  "before": {
+    "A": {
+      "queries": 296375.0,
+      "hits": 185328.0
+    },
+    "B": {
+      "queries": 250030.0,
+      "hits": 150784.0
+    }
+  },
+  "after": {
+    "A": {
+      "queries": 305705.0,
+      "hits": 194592.0
+    },
+    "B": {
+      "queries": 250030.0,
+      "hits": 150784.0
+    }
+  },
+  "counter_deltas": {
+    "A": {
+      "queries": 9330.0,
+      "hits": 9264.0
+    },
+    "B": {
+      "queries": 0.0,
+      "hits": 0.0
+    }
+  },
+  "summary": {
+    "successful_requests": 4,
+    "failed_requests": 0,
+    "burst_seconds": 0.15439368301304057,
+    "mean_first_content_seconds": 0.07048766924708616
+  },
+  "final_router_stats": {
+    "policy": "affinity",
+    "load_threshold": 2,
+    "in_flight": {
+      "A": 0,
+      "B": 0
+    }
+  }
+}
