@@ -18,7 +18,7 @@ REPLICAS = [
 POLICY = os.environ.get("ROUTING_POLICY", "round_robin")
 LOAD_THRESHOLD = int(os.environ.get("LOAD_THRESHOLD", "2"))
 
-if POLICY not in {"round_robin", "affinity", "affinity_load"}:
+if POLICY not in {"round_robin", "least_in_flight", "affinity", "affinity_load"}:
     raise RuntimeError(f"Unsupported policy: {POLICY}")
 
 if LOAD_THRESHOLD < 1:
@@ -86,7 +86,25 @@ async def chat(request: ChatRequest):
 
     # Select and reserve a destination in one atomic critical section.
     async with app.state.selection_lock:
-        if POLICY != "round_robin" and request.affinity_key is not None:
+        if POLICY == "least_in_flight":
+            minimum = min(app.state.in_flight.values())
+
+            # Rotate preference when replicas have equal counts.
+            start = app.state.next_replica
+            candidates = [
+                (start + offset) % len(REPLICAS)
+                for offset in range(len(REPLICAS))
+            ]
+
+            index = next(
+                i for i in candidates
+                if app.state.in_flight[REPLICAS[i][0]] == minimum
+            )
+
+            app.state.next_replica = (index + 1) % len(REPLICAS)
+            reason = "least_in_flight"
+
+        elif POLICY != "round_robin" and request.affinity_key is not None:
             preferred = affinity_index(
                 request.model, request.affinity_key
             )
