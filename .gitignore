@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+venv/
+
+# Models and caches
+.cache/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Incomplete Git initialization backup
+.git-incomplete-*/
+
+# Generated Python files
+__pycache__/
+*.py[cod]
+
+# Runtime logs
+logs/
+*.log
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor files
+.ipynb_checkpoints/
+.DS_Store
