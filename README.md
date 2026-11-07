@@ -1,4 +1,4 @@
-cat > README.md <<'EOF'
+
 # Cache-aware inference router
 
 A Python inference-routing prototype investigating the tradeoff between
